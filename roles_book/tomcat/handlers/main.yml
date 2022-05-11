@@ -1,0 +1,7 @@
+---
+# handlers file for /home/ubuntu/roles_book/tomcat
+
+  - name: restart tomcat
+    service: 
+      name: tomcat9
+      state: restarted

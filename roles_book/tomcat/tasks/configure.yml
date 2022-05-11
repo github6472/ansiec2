@@ -1,0 +1,11 @@
+---
+  - name: copying war file to tomcat server
+    copy:
+      src: /home/ubuntu/gitrepo/crepo/target/crepo.war 
+      dest: /var/lib/tomcat9/webapps/crepo.war
+      #remote_src: yes
+      
+    notify:
+     - restart tomcat 
+...
+

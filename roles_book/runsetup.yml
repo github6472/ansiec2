@@ -1,0 +1,8 @@
+---
+  - name: implementing roles for tomcat
+    hosts: all
+    gather_facts: true
+    become: true
+
+    roles: 
+      - tomcat
