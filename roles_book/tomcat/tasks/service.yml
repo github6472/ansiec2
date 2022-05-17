@@ -1,5 +1,0 @@
----
- - name: start & anable tomcat service
-   service: 
-     name: tomcat9
-     state: started

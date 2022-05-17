@@ -1,9 +1,0 @@
----
-  - name: servive start
-    hosts: all 
-    become: yes
-    tasks:
-     - name: service starting
-       service:
-         name: tomcat9
-         state: started
