@@ -1,0 +1,78 @@
+Technical Skills:
+		
+    • Web Server		         : Apache
+    • Cloud technology		         : AWS (EC2 instance,VPC,S3 Bucket …)
+    • Operating Systems	         : Linux ,Ubuntu Windows Server
+    • Deployment CI/CM/CD Tools         : Jenkins, Ansible
+    • Built Tools	  		 : Maven
+    • Monitoring Tools 	         :  Nagios 
+    • Source Repository		 : GitHub , Git
+    • Scripting tools			 : Shell Script, YAML... groovy
+    • Application servers		 : Apache Tomcat
+    • Infrastructure tool		 : Terraform.
+    Application Server                  :  Tomcat and Apache
+    CI/CD Tools			 :  Jenkins
+    Configuration Management            :  Ansible
+    Containerization Tool               :  Docker
+    Container Orchestration Tool        :  Docker Swarm and Kubernetes
+    Cloud Platform                      :  AWS (EC2, EBS, EFS ,S3,VPC)
+
+
+GIT:
+    • Git server installation, configuration, administration and maintenance.
+    • Responsible for receive and fulfill GIT user related requests.
+    • Created folder structures for Java applications in the GIT repository
+    • Responsible for troubleshooting GIT issues. Discover and investigate issues that may be preventing users from accessing and using GIT   
+      repository.
+
+Maven:
+    • Creating build files (POM- project object module) and building Java projects.
+    • Solving build related issues such as resolving dependencies, version conflicts and any other failures.         
+
+    
+Jenkins:
+    • Configuring the application for continuous integration build.
+    • Setting auto deployment using scripts.
+    • Installing and maintaining the Jenkins server.
+
+LINUX:
+    • Installing LINUX servers.
+    • Adding Users and access control.
+
+
+    
+    RESPONSIBILITIES
+    -----------------
+     Basic Knowledge on Container Orchestration Kubernetes.
+    • Manage and configure AWS services as per the business needs (ELB, SNS, EC2, Route53, S3, RDS, Cloud Watch, Cloud Front IAM, AWS Code    
+        Deploy, SNS, and VPC
+    • EC2 instances, Auto Scaling, Elastic Load Balance and AMIs.
+    
+    • Deployed Ansible playbooks for configuration management to existing infrastructure.
+    • Used Ansible to automate Configuration management.
+    • Used Ansible to manage Web Applications, Configuration Files, Data Base, Commands, User’s Mount points, Packages.
+    
+    • Maintained and coordinated environment configuration, controls, code integrity, and code conflict resolution.
+    • Used Subversion as source code repositories and Managed GitHub repositories for branching, merging, and tagging.
+    • Analyse and resolve conflicts related to merging of source code for GIT.
+    • Implemented the setup for Master slave architecture to improve the Performance of Jenkins.
+    • Used Jenkins for Continuous Integration and deployment into Tomcat Application Server.
+    
+    HAVE TO KNOW THIS THINGS 
+    ------------------------
+    • Experience in working with ​Docker Swarm ​Container Orchestration tool to deploy & maintain containers
+    • Experience in ​Amazon AWS ​Cloud Administration which includes services like ​EC2​, ​S3​, ​EBS​, EFS​,​VPC​,​ELB​,​AMI​,​IAM ​and ​Security Groups
+    • Experience in creating Amazon ​AWS EFS to mount a running ​Docker Container ​in order to take data backup
+    * Good Knowledge of Application Lifecycle Management, Change & Release Management and ITIL process.
+    • Launched and configured The Amazon EC2 (AWS) Cloud Servers using AMI's (Linux/Ubuntu) and configuring the servers for specified   
+       applications. 
+    • Enabled AWS, deployments for UAT environments performed merges for each build from Development Branch to Integration Branch
+    • Responsible for dockerizing applications.
+    • Strong experience in writing docker files.
+    • Responsible for configuring docker private registries to maintain docker images.
+    • Responsible for creating Kubernetes manifest files like daemon sets, replica sets, deployments.
+    • Responsible for creating & configuring persistent volumes, persistent volume claims.
+    • Strong experience in Kubernetes cluster setup and deploying applications in Kubernetes cluster.
+    • Implemented CI/CD using Jenkins, docker & Kubernetes.
+    • Responsible for creating docker swarm cluster and deploying docker services in docker swarm cluster.
+    • Implemented CI/CD using Jenkins & docker swarm
