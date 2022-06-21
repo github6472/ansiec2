@@ -1,0 +1,11 @@
+---
+  - name: docker image pulling from docker hub
+    become: true
+    hosts: all
+    tasks: 
+    - name: login into docker hub
+      docker_login:
+       username: shaikghouse
+       password: docker6472
+       email: ghouseahammad6472@gmail.com
+...

@@ -1,0 +1,18 @@
+---
+  - name: working on tomcat container
+    become: yes
+    hosts: all
+    tasks: 
+     - name: start tomcat as a container
+       docker_container:
+         image: tomcat 
+         name: webser
+
+     - name: stop tomcat container
+       docker_container:
+         name: webser
+         starte: stopped
+     - name: remove the tomcat container
+       docker_container:
+         name: webser
+         state: absent

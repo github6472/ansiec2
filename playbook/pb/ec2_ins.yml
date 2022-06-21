@@ -1,0 +1,20 @@
+---
+  - name: smaple play to creating  aws ec2 instance
+    hosts: localhost
+    connection: local
+    gather_facts: false
+    tasks:
+      - name: simple task to lunch ec2 intance with default value
+        ec2:
+          group: default
+          instance_type: t2.micro
+          image: value=ami-0851b76e8b1bce90b
+          region: default
+          key_name: 2nd-i
+          count: 1
+          wait: yes
+          wait_timeout: 200
+          #vpc_subnet_id: vpc-02691bc05973bb177 #default #subnet-29e63245
+          assign_public_ip: yes
+          aws_access_key: AKIAZ27VNOFXMZ5YBHGI
+          aws_secret_key: Key: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

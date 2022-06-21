@@ -1,0 +1,17 @@
+---
+  - name: setup of docker for ansible
+    hosts: all
+    become: yes
+    tasks:
+   # - name: install python - pip
+   #    apt: 
+   #      name: python-pip
+   #     state: present
+   #     update_cache: yes
+     - name: downloading docker & pip docker 
+       shell: "{{ item }}"
+       with_items: 
+        - curl -fsSL https://get.docker.com -o get-docker.sh
+        - sh get-docker.sh
+    #   - pip install docker-py
+...

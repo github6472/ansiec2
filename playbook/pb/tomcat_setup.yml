@@ -1,0 +1,22 @@
+---
+  - name: tomcat setup 
+    become: yes 
+    hosts: all
+    tasks: 
+      - name: download tomcat 
+        shell: |
+          wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.60/bin/apache-tomcat-9.0.60.tar.gz
+          tar -zxvf apache-tomcat-9.0.60.tar.gz
+        tags:
+          install
+      - name: copying war file for test 
+        copy:
+          shell: |
+            scp -p '6472' /home/ubuntu/gitrepos/crepo/target/crepo.war ubuntu@172.31.0.120:/home/ubuntu/apache-tomcat-9.0.60/webapps/
+            scp -p '6472' /home/ubuntu/gitrepos/crepo/target/crepo.war ubuntu@172.31.1.219:/home/ubuntu/apache-tomcat-9.0.60/webapps/crepo.war
+        tags:
+          copyfile
+      - name: tomcat service startting 
+        shell: sh apache-tomcat-9.0.60/bin/startup.sh
+        tags:
+          service

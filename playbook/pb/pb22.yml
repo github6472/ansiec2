@@ -1,0 +1,20 @@
+--- 
+  - name: implementing docker compose using ansible
+    become: yes
+    hosts: all
+    tasks: 
+     - name: starting mysql as a cont
+       docker_cantainer:
+         image: mysql:5
+         name: mydb
+         env: 
+           MYSQL_ROOT_PASSWORD: 6472
+     - name: starting wordpress as a cont & linking with mysql cont
+       docker_cantainer:
+         image: wordpres
+         name: mwp
+         ports:
+          - 8888:80
+         links: 
+          - mydb: mysql
+...

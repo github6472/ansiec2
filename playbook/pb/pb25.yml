@@ -1,0 +1,11 @@
+---
+  - name: start 10 httpd cont
+    become: yes
+    hosts: all
+    tasks:
+    - name: create 10 httpd
+      docker_container:
+        image: httpd
+        name: " cont{{ item }}"
+      with_sequence:  count=10
+...

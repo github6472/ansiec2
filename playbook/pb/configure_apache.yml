@@ -1,0 +1,17 @@
+---
+ - name: calling all the child p/b
+   hosts: all
+   become: yes
+   tasks:
+     - include: install.yml
+     - include: edit-html.yml
+     - include: restart.yml
+     - include: check_url_response.yml
+    #- include: "{{ item }}"
+    #   with_item:
+    #   - install.yml
+    #   - edit-html.yml
+    #   - restart.yml
+    #   - check_rul_response.yml
+
+...

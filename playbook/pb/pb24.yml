@@ -1,0 +1,21 @@
+--- 
+  - name: create ci-cd environment using docker & ansible
+    become: yes
+    hosts: all
+    tasks:
+      - name: create jk as a cont
+        docker_container:
+          image: jenkins
+          name: devser
+          ports: 
+           - 5555:8080
+      - name: start tomcat cont-s
+        docker_container:
+          image: tomcat 
+          name: "{{ item.a }}"
+          ports: "{{ item.b }}"
+        with_items:
+          - { a: qaser, b: 6666:8080 }
+          - { a: prodser, b: 7777:8080}
+...
+

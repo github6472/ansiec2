@@ -1,0 +1,6 @@
+---
+  - name: edit index.html
+    copy: 
+      content: "Welcome to the ansible tomcat \n"
+      dest: /var/www/html/index.html
+...

@@ -1,0 +1,15 @@
+---
+  - name: smaple play to creating  aws ec2 instance
+    hosts: localhost
+    connection: local
+    gather_facts: false
+    tasks:
+      - name: simple task to lunch ec2 intance with default valure
+        ec2:
+         aws_name: ansi-ec2-ins
+         aws_key_name: 2nd-i
+         aws_instance_type: t2.micro
+         aws_image: ami-0851b76e8b1bce90b
+         aws_region: ap-south-1b
+         aws_access_key: AKIAZ27VNOFXMZ5YBHGI
+         aws_secret_key: Key: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

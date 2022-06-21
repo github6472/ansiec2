@@ -1,0 +1,15 @@
+---
+  - name: installing git & cloning repository 
+    hosts: all
+    become: yes
+    tasks: 
+      - name: installing git 
+        apt:
+          name: git 
+          state: present
+          update_cache: yes
+      
+      - name: clone repository
+        git:
+          repo: https://github.com/github6472/drepo.git
+          dest: /home/ubuntu/mygit-repos

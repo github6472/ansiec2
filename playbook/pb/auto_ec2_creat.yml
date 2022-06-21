@@ -1,0 +1,16 @@
+---
+  - name: smaple play to launch ec2 instance 
+    hosts: localhost
+    connection: local
+    gather_facts: false
+    tasks:
+     - name: simple task too laucnh ec2 instance with default values
+       ec2_instance: 
+          security_group: default
+          instance_type: t2.micro
+          image: value=ami-0851b76e8b1bce90b
+          key_name: 2nd-i
+          region: ap-south-1
+          aws_access_key: AKIAZ27VNOFXMZ5YBHGI
+          aws_secret_key: 56lkCVTczkwCXMdUiL8uigqR6oN37SPZ9BThHMKMs
+

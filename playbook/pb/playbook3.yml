@@ -1,0 +1,33 @@
+---
+  - name: installing tomcat8 & configuring tomcat
+    hosts: all
+    become: yes
+    tasks:
+        - name: install tomcat8
+          apt:
+            name: tomcat8
+            state: present
+        - name: changing default port on tomcat
+          replace: 
+            regexp: 8080
+            replace: 9090
+            path: /etc/tomcat8/server.xml
+
+        - name: restart tomcat
+          service:
+            name: tomcat8
+            state: restarted
+
+        - name: pause for 3 sec's
+          pause:
+            seconds: 3
+
+        - name: check url response of webser..
+          uri:
+            url: http://172.31.0.120
+            status: 200
+
+        - name: check url responseof dbser..
+          uri:
+            url: http//172.31.1.219
+            status: 200

@@ -1,0 +1,21 @@
+---
+  - name: error handling
+    hosts: all
+    become: yes
+    tasks:
+     - block:
+        - name: install comcat 7
+          apt:
+            name: tomcar7
+            state: present
+       rescue: 
+        - name: install tomcat 8
+          apt:
+            name: tomcat8
+            state: present
+       always: 
+        - name: check url
+          uri: 
+            url: http://172.31.0.120
+            status: 200
+...

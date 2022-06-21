@@ -1,0 +1,8 @@
+--- 
+  - name: calling child playbook
+    hosts: all
+    become: yes
+    tasks:
+     - name: execute the child playbook
+       include: playbook13.yml
+...

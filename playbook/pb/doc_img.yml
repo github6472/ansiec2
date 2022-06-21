@@ -1,0 +1,21 @@
+--- 
+  - name: image pulling from docker hub
+    become: true 
+    hosts: all
+    tasks: 
+    - name: docker images
+      docker_image:
+        name: shaikghouse/myubuntu
+        tag: latest
+        source: pull
+        
+        ## source is deff 1 is get from hub 2 is get from locally ##
+       ## - image id will comes same check once if u use this image
+
+   #  - name: docker images & pull an image
+   #    docker_image:
+   #    name: myubuntu
+   #    tag: latest
+   #    repository: shaikghouse/myubuntu
+   #    source: local
+...

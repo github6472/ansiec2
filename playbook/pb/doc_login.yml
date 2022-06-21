@@ -1,0 +1,13 @@
+---
+  - name: login 
+    become: tue
+    hosts: all
+    tasks: 
+    - name: docker login
+      docker_login: 
+        registry: registry.githu.com
+        username: github6472
+        password: "{{ vault_passwd_doc }}"
+        reauthorize: yes
+
+...

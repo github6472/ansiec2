@@ -1,0 +1,6 @@
+---
+  - name: knowing os on the nodes
+    hosts: all 
+    gather_facts: true
+    tasks:
+      - debug: var=ansible_os_family

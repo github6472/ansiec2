@@ -1,0 +1,11 @@
+---
+  - name: installing software in nodes
+    hosts: all
+    become: yes
+    tasks:
+      - name: installing git at managed nodes
+        apt:
+          name: git
+          state: present
+          update_cache: yes
+...

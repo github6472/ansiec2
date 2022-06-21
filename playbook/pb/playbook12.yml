@@ -1,0 +1,20 @@
+---
+  - name: implimenting
+    hosts: all
+    become: yes
+    tasks: 
+     - name: install
+       apt:
+         name: tree
+         state: present
+         update_cache: yes
+       tags:
+         tree-ins
+     - name: installing git
+       apt: 
+         name: git
+         state: present
+         update_cache: no
+       tags:
+         git-ins
+...
